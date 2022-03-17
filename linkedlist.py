@@ -1,4 +1,5 @@
 class Node:
+    
     def __init__(self,value=None):
         self.value = value
         self.next = None
@@ -67,3 +68,18 @@ class LinkedList:
     def pop(self):
         leader = self.traverseToIndex(self.length-2)
         leader.next = None
+
+    def reverse(self):
+        currNode = self.head
+        self.head = Node(currNode.value)
+        while currNode.next != None:
+            currNode = currNode.next
+            self.prepend(currNode.value)
+        
+        # Updating the tail so that values can be added to the lists
+        currNode = self.head
+        while currNode.next != None:
+            currNode = currNode.next
+            self.tail = currNode
+
+        return self.head
