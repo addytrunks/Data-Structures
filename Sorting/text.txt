@@ -1,0 +1,21 @@
+Why the fuss over sorting?
+Why not use the builtin 'sort' method?
+
+The problem arises when there are a large number of data is present, for which using the builtin sort function is not efficient.
+
+Custom sorting methods are required to lower the number of operations and lower the cost.
+
+Different Types of Sorting:
+    1. Bubble Sort    ------|
+    2. Insertion Sort       | Elementary Sorts
+    3. Selection Sort ------|  
+        
+    4. Merge Sort     ------|     
+    5. Quick Sort     ------| Divide and Conquer Sorts
+
+
+Important to know when to use the sorting algorithms.
+
+When to use what sorting?
+    1. Insertion - Only when the data is almost sorted and small
+    2. Merge     - If you are worried about worst case.
